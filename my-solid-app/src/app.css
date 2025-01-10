@@ -1,0 +1,126 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Vollkorn", serif;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  margin-right: 1rem;
+}
+
+main {
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto;
+}
+:root {
+  --primary-color: #2b81e4;
+  --secondary-color: #eee;
+  --white-color: #fff;
+  --grey-color: #555;
+  --light-grey-color: #777;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: var(--secondary-color);
+  margin: 3.5rem;
+  box-shadow: 0 1rem 3rem var(--grey-color);
+  overflow: hidden;
+}
+.background {
+  width: 100%;
+  height: calc(100vh - 7rem);
+  background: linear-gradient(rgba(18, 113, 255, 0.5), rgba(18, 113, 255, 0.3)),
+    url(images/header-bg.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  perspective: 100rem;
+ 
+}
+.header {
+  width: 100%;
+  height: calc(100vh - 7rem);
+  background: linear-gradient(rgba(18, 113, 255, 0.5), rgba(18, 113, 255, 0.3)),
+    url(images/header-bg.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  perspective: 100rem;
+}
+
+.header-text {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0.3rem 0.5rem var(--grey-color);
+}
+
+.heading {
+  font-size: 8rem;
+  color: var(--white-color);
+}
+
+.header-paragraph {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+  max-width: 70rem;
+  margin: auto;
+}
+
+h1 {
+  color: #335d92;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1.1;
+  margin: 4rem auto;
+  max-width: 14rem;
+}
+
+p {
+  max-width: 14rem;
+  margin: 2rem auto;
+  line-height: 1.35;
+}
+
+@media (min-width: 480px) {
+  h1 {
+    max-width: none;
+  }
+
+  p {
+    max-width: none;
+  }
+}
+
+.increment {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1em 2em;
+  color: #335d92;
+  background-color: rgba(68, 107, 158, 0.1);
+  border-radius: 2em;
+  border: 2px solid rgba(68, 107, 158, 0);
+  outline: none;
+  width: 200px;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+}
+
+.increment:focus {
+  border: 2px solid #335d92;
+}
+
+.increment:active {
+  background-color: rgba(68, 107, 158, 0.2);
+}

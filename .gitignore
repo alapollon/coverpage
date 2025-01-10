@@ -3,3 +3,8 @@
 
 */images/*
 *.DS_Store
+index.html
+scripts.js
+style.css
+/node_modules/
+/public 

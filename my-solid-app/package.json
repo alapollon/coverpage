@@ -1,0 +1,26 @@
+{
+  "name": "coverpage",
+  "type": "module",
+  "scripts": {
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start",
+    "preview": "npm run build && npx wrangler pages dev",
+    "deploy": "npm run build && wrangler pages deploy"
+  },
+  "dependencies": {
+    "@solidjs/start": "^1.0.11",
+    "solid-js": "^1.9.2",
+    "vinxi": "^0.4.3"
+  },
+  "overrides": {
+    "vite": "5.4.10"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250109.0",
+    "wrangler": "^3.101.0"
+  }
+}
